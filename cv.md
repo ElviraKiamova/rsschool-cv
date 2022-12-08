@@ -1,30 +1,25 @@
 
 
-#**Elvira Kiamova**
+# **Elvira Kiamova**
+
 *********
 
-
-![](../../../%D0%AD%D0%BB%D1%8C%D0%B2%D0%B8%D1%80%D0%B0/i.jpg)
-
-
-##**Contacts**
-*********
+## **Contacts**
 
 * **Address:** Russia, Ufa
 * **E-mail:** ela.kiyamova@yandex.ru
 * **Phone:** +7 927 361 19 88
-* **Discord:** [ElviraKiamova][https://discord.com/channels/516715744646660106/900349852091817994]
-* **GitHub:** [ElviraKiamova][https://github.com/ElviraKiamova]
+* **GitHub:** https://github.com/ElviraKiamova
 
-
-##**About Me**
 *********
+
+## **About Me**
 
 The purpose of my training is to get a good knowledge base on programming for further use in work. A constant desire for something new and challenging led me to this school. 
 
-
-##**Skills**
 *********
+
+## **Skills**
 
 * HTML
 * CSS
@@ -34,9 +29,10 @@ The purpose of my training is to get a good knowledge base on programming for fu
 * Figma(for web development)
 * Editors: Sublime, VSCode
 
-
-##**Code examples**
 *********
+
+## **Code examples**
+
 Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you'll have to capitalize each word, check out how contractions are expected to be in the example below.
 
 Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.
@@ -51,16 +47,14 @@ String.prototype.toJadenCase = function () {
 };
 ```
 
-
-##**Education**
 *********
+## **Education**
 
 * **University:** Samara State University of Railway Transport, specialty "engineer of wagon economy"
 * **Courses:** "Practicum" from Yandex
 
-
-
-##**English**
 *********
+
+## **English**
 
 Beginner
