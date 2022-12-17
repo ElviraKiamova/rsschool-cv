@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/assets/favicon/favicon.ico">
+  <title>cv</title>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#examples">Code examples</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#english">English</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <div class="container main-container">
+        <section class="section section-profile" id="profile">
+          <img class ="section-img" src="./assets/img/i.jpg" alt="Профиль">
+          <h1 class="section-title section-big-title">Elvira Kiamova</h1>
+        </section>
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="section-list">
+            <li class="section-item"><span class="section-span">Address:</span> Russia, Ufa</li>
+            <li class="section-item"><span class="section-span">E-mail:</span> ela.kiyamova@yandex.ru</li>
+            <li class="section-item"><span class="section-span">Phone:</span> +7 927 361 19 88</li>
+          </ul>
+        </section>
+        <section class="section" id="about">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-text">The purpose of my training is to get a good knowledge base on programming for further use in work. A constant desire for something new and challenging led me to this school.</p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="section-list">
+            <li class="section-item">HTML</li>
+            <li class="section-item">CSS</li>
+            <li class="section-item">JavaScript (base)</li>
+            <li class="section-item">Git</li>
+            <li class="section-item">Windows OS</li>
+            <li class="section-item">Figma(for web development)</li>
+            <li class="section-item">Editors: Sublime, VSCode</li>
+          </ul>
+        </section>
+        <section class="section" id="examples">
+          <h2 class="section-title">Code examples</h2>
+          <p class="section-text">Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word. For simplicity, you’ll have to capitalize each word, check out how contractions are expected to be in the example below.</p>
+          <p class="section-text">Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.</p>
+          <p class="section-text">Example: Not Jaden-Cased: “How can mirrors be real if our eyes aren’t real” Jaden-Cased: “How Can Mirrors Be Real If Our Eyes Aren’t Real”</p>
+          <pre class="section-pre">
+String.prototype.toJadenCase = 
+function () {
+  return this
+  .split(' ')
+  .map(word => word[0].toUpperCase() 
+   + word.slice(1)).join(' ');
+};
+         </pre>
+        </section>
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="section-list">
+            <li class="section-item"><span class="section-span">University:</span> Samara State University of Railway Transport, specialty “engineer of wagon economy”</li>
+            <li class="section-item"><span class="section-span">Courses:</span> “Practicum” from Yandex</li>
+          </ul>
+        </section>
+        <section class="section" id="english">
+          <h2 class="section-title">English</h2>
+          <p class="section-text">Beginner</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__year">&copy; 2022</p>
+      <a class="footer__link" href="https://github.com/ElviraKiamova">GitHub</a>
+      <a class="footer__link" href="https://rs.school/js/">
+        <div class="footer__icon"></div>
+      </a>
+    </footer>
+  </div>
+</body>
+</html>
