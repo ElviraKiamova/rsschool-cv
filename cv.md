@@ -12,7 +12,7 @@
 
 ## **About Me**
 
-The purpose of my training is to get a good knowledge base on programming for further use in work. A constant desire for something new and challenging led me to this school. 
+The purpose of my training is to get a good knowledge base on programming for further use in work.
 
 *********
 
