@@ -68,6 +68,42 @@
           </ul>
         </section>
 
+        <section class="section" id="examples">
+          <h2 class="section-title">Code examples</h2>
+          <p class="section-text">The function takes a string, extracts the digits from 0 to 9 contained in it and returns them as a positive integer.</p>
+          <pre class="section-pre">
+            <code>
+                function returnsNumber(str) {
+                    let string = '';
+                    if (typeof str === 'number') {
+                      string = parseInt(Math.abs(str).toString().replace('.', ''), 10);
+                    }
+                    for(let i = 0; i <= str.length - 1; i++) {
+                      const pars = Number.isNaN(parseInt(str[i], 10));
+                      if (pars === false) {
+                        string += str[i];
+                      }
+                    }
+                    if (string === '') {
+                      return NaN;
+                    }
+                    return +string;
+                  }
+            </code>
+          </pre>
+        </section>
+
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="section-list">
+            <li class="section-item"><span class="section-span">University:</span> Samara State University of Railway Transport, specialty "engineer"</li>
+          </ul>
+        </section>
+
+        <section class="section" id="english">
+          <h2 class="section-title">English</h2>
+          <p class="section-text">Beginner</p>
+        </section>
       </div>
     </main>
   </div>
