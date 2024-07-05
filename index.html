@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV - briefly about yourself">
+  <meta name="keywords" content="achievements,education,contacts">
+  <meta name="author" content="Elvira Kiyamova">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <title>CV</title>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <nav aria-label="page-navigation" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#skills">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#examples">Code examples</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#education">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#english">English</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="container main-container">
+        <section class="section section-profile" id="profile">
+          <img class="section-img" src="./assets/img/i.jpg" alt="Профиль">
+          <h1 class="section-title section-big-title">Elvira Kiamova</h1>
+        </section>
+
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="section-list">
+              <li class="section-item"><span class="section-span">Address:</span> Russia, Ufa</li>
+              <li class="section-item"><span class="section-span">E-mail:</span> ela.kiyamova@yandex.ru</li>
+              <li class="section-item"><span class="section-span">Phone:</span> +7 927 361 19 88</li>
+            </ul>
+        </section>
+
+        <section class="section" id="about">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-text">The purpose of my training is to get a good knowledge base on programming for further use in work.</p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="section-list">
+            <li class="section-item">HTML</li>
+            <li class="section-item">CSS</li>
+            <li class="section-item">JavaScript (base)</li>
+            <li class="section-item">Git</li>
+            <li class="section-item">Figma(for web development)</li>
+            <li class="section-item">Editors: Sublime, VSCode</li>
+          </ul>
+        </section>
+
+        <section class="section" id="examples">
+          <h2 class="section-title">Code examples</h2>
+          <p class="section-text">The function takes a string, extracts the digits from 0 to 9 contained in it and returns them as a positive integer.</p>
+          <pre class="section-pre">
+            <code>
+    function returnsNumber(str) {
+      let string = '';
+      if (typeof str === 'number') {
+        string = parseInt(Math.abs(str).toString().replace('.', ''), 10);
+      }
+      for(let i = 0; i &lt;= str.length - 1; i++) {
+        const pars = Number.isNaN(parseInt(str[i], 10));
+        if (pars === false) {
+          string += str[i];
+        }
+      }
+      if (string === '') {
+        return NaN;
+      }
+      return +string;
+    }
+
+            </code>
+          </pre>
+        </section>
+
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="section-list">
+            <li class="section-item"><span class="section-span">University:</span> Samara State University of Railway Transport, specialty "engineer"</li>
+          </ul>
+        </section>
+
+        <section class="section" id="english">
+          <h2 class="section-title">English</h2>
+          <p class="section-text">Beginner</p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__block">
+            <p class="footer__year">&copy; 2024</p>
+            <nav class="footer__links">
+              <a class="footer__link" href="https://github.com/ElviraKiamova" target="_blank">GitHub</a>
+              <a class="footer__link" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+                <div class="footer__icon"></div>
+              </a>
+            </nav>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>
