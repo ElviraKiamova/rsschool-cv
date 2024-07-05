@@ -3,6 +3,12 @@
    src: url("/assets/fonts/Roboto-Regular.ttf");
  }
 
+  /* * {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: red;
+} */
+
 * {
   box-sizing: border-box;
  }
@@ -12,8 +18,10 @@
 }
 
 .page {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -91,40 +99,41 @@
 
 
 .section-img {
-  width: 250px;
+  width: 350px;
   height: 320px;
   margin: 0 50px;
-  border-radius: 30px;
 }
 
 .section-item {
   position: relative;
-  padding-left: 30px;
   list-style-type: none;
 }
 
-.section-item::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #829985;
-  border-radius: 50%;
+.section-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #5d7260;
+}
+
+.section-text {
+  margin-left: 40px;
 }
 
 .footer {
+  width: 100%;
+  max-width: 1060px;
   display: flex;
   padding: 40px 30px;
   margin: 0 auto;
 }
 
 .footer__block {
-  width: 1000px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 40px 30px;
+  margin: 0;
 }
 
 .nav__link:hover,
@@ -156,17 +165,81 @@
   padding: 0;
 }
 
-.footer__link:last-child {
-  justify-content: flex-end;
-  margin-right: 30px;
+
+
+
+@media (max-width: 920px) {
+  .page {
+    font-size: 12px;
+  }
 }
 
-.footer__year {
-  margin-left: 30px;
+
+@media (max-width: 800px) {
+  .page {
+    font-size: 12px;
+  }
+  .section-big-title {
+    font-size: 30px;
+    margin: 30px auto 30px;
+  }
+  .section-profile {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.section-link {
-  text-decoration: none;
-  cursor: pointer;
-  color: #5d7260;
+@media (max-width: 750px) {
+  .nav__link {
+    padding: 0 20px 0 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-big-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+   display: none;
+  }
+
+  #examples {
+     display: none;
+   }
+}
+
+@media (max-width: 520px) {
+  .section-big-title {
+    margin: 30px 0 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer__links {
+    align-items: center;
+  }
+  .footer__link {
+    margin: 0;
+  }
+  .footer__year {
+    margin: 0;
+  }
+  .footer__icon {
+    width: 50px;
+    height: 20px;
+  }
+  .footer__link:last-child {
+    margin-right: 0;
+  }
+  .section-list {
+    padding: 0;
+  }
+
+  .section-img {
+    width: 200px;
+    height: 200px;
+  }
 }

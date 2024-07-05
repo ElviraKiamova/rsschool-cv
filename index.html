@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="CV - briefly about yourself">
   <meta name="keywords" content="achievements,education,contacts">
   <meta name="author" content="Elvira Kiyamova">
@@ -73,22 +73,22 @@
           <p class="section-text">The function takes a string, extracts the digits from 0 to 9 contained in it and returns them as a positive integer.</p>
           <pre class="section-pre">
             <code>
-        function returnsNumber(str) {
-          let string = '';
-          if (typeof str === 'number') {
-            string = parseInt(Math.abs(str).toString().replace('.', ''), 10);
-          }
-          for(let i = 0; i <= str.length - 1; i++) {
-            const pars = Number.isNaN(parseInt(str[i], 10));
-            if (pars === false) {
-              string += str[i];
-            }
-          }
-          if (string === '') {
-            return NaN;
-          }
-          return +string;
+    function returnsNumber(str) {
+      let string = '';
+      if (typeof str === 'number') {
+        string = parseInt(Math.abs(str).toString().replace('.', ''), 10);
+      }
+      for(let i = 0; i &lt;= str.length - 1; i++) {
+        const pars = Number.isNaN(parseInt(str[i], 10));
+        if (pars === false) {
+          string += str[i];
         }
+      }
+      if (string === '') {
+        return NaN;
+      }
+      return +string;
+    }
 
             </code>
           </pre>
