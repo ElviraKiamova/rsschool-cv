@@ -108,3 +108,14 @@
   padding-left: 30px;
   list-style-type: none;
 }
+
+.section-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #829985;
+  border-radius: 50%;
+}
