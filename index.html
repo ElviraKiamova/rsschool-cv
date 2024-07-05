@@ -73,22 +73,23 @@
           <p class="section-text">The function takes a string, extracts the digits from 0 to 9 contained in it and returns them as a positive integer.</p>
           <pre class="section-pre">
             <code>
-                function returnsNumber(str) {
-                    let string = '';
-                    if (typeof str === 'number') {
-                      string = parseInt(Math.abs(str).toString().replace('.', ''), 10);
-                    }
-                    for(let i = 0; i <= str.length - 1; i++) {
-                      const pars = Number.isNaN(parseInt(str[i], 10));
-                      if (pars === false) {
-                        string += str[i];
-                      }
-                    }
-                    if (string === '') {
-                      return NaN;
-                    }
-                    return +string;
-                  }
+        function returnsNumber(str) {
+          let string = '';
+          if (typeof str === 'number') {
+            string = parseInt(Math.abs(str).toString().replace('.', ''), 10);
+          }
+          for(let i = 0; i <= str.length - 1; i++) {
+            const pars = Number.isNaN(parseInt(str[i], 10));
+            if (pars === false) {
+              string += str[i];
+            }
+          }
+          if (string === '') {
+            return NaN;
+          }
+          return +string;
+        }
+
             </code>
           </pre>
         </section>
@@ -106,6 +107,17 @@
         </section>
       </div>
     </main>
+    <footer class="footer">
+        <div class="footer__block">
+            <p class="footer__year">&copy; 2024</p>
+            <nav class="footer__links">
+              <a class="footer__link" href="https://github.com/ElviraKiamova" target="_blank">GitHub</a>
+              <a class="footer__link" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+                <div class="footer__icon"></div>
+              </a>
+            </nav>
+        </div>
+    </footer>
   </div>
 </body>
 </html>
