@@ -28,9 +28,6 @@
             <a class="nav__link" href="#skills">Skills</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#examples">Code examples</a>
-          </li>
-          <li class="nav__item">
             <a class="nav__link" href="#projects">Projects</a>
           </li>
           <li class="nav__item">
@@ -52,9 +49,12 @@
         <section class="section" id="contacts">
             <h2 class="section-title">Contacts</h2>
             <ul class="section-list">
-              <li class="section-item"><span class="section-span">Address:</span> Russia, Ufa</li>
-              <li class="section-item"><span class="section-span">E-mail:</span> ela.kiyamova@yandex.ru</li>
-              <li class="section-item"><span class="section-span">Phone:</span> +7 927 361 19 88</li>
+              <li class="section-item"><span class="section-span">Address:  </span>
+                <a href="https://maps.app.goo.gl/QuhAdpxTYyk9ob7h8" target="_blank"> Russia, Ufa</a>
+              </li>
+              <li class="section-item"><span class="section-span">E-mail:</span><a href="mailto:ela.kiyamova@yandex.ru">ela.kiyamova@yandex.ru</a></li>
+              <li class="section-item"><span class="section-span">Phone:</span><a href="tel:+79273611988">+7 927 361 19 88</a></li>
+              <li class="section-item"><span class="section-span">Telegram:</span><a href="https://t.me/ela_kiamova">ela_kiamova</a></li>
             </ul>
         </section>
 
@@ -74,43 +74,20 @@
           </ul>
         </section>
 
-        <section class="section" id="examples">
-          <h2 class="section-title">Code examples</h2>
-          <p class="section-text">The function takes a string, extracts the digits from 0 to 9 contained in it and returns them as a positive integer.</p>
-          <pre class="section-pre">
-            <code>
-    function returnsNumber(str) {
-      let string = '';
-      if (typeof str === 'number') {
-        string = parseInt(Math.abs(str).toString().replace('.', ''), 10);
-      }
-      for(let i = 0; i &lt;= str.length - 1; i++) {
-        const pars = Number.isNaN(parseInt(str[i], 10));
-        if (pars === false) {
-          string += str[i];
-        }
-      }
-      if (string === '') {
-        return NaN;
-      }
-      return +string;
-    }
-
-            </code>
-          </pre>
-        </section>
-
         <section class="section" id="projects">
           <h2 class="section-title">Projects</h2>
           <ul class="section-list">
+            <li class="section-item">
+              <a class="section-link" href="https://elvirakiamova.github.io/1048521-kekstagram-32/" target="_blank">Kekstagram</a>
+            </li>
+            <li class="section-item">
+              <a class="section-link" href="https://rolling-scopes-school.github.io/elvirakiamova-JSFEPRESCHOOL2024Q2/shelter/" target="_blank">Shelter</a>
+            </li>
             <li class="section-item">
               <a class="section-link" href="https://rolling-scopes-school.github.io/elvirakiamova-JSFEPRESCHOOL2023Q2/" target="_blank">Brooklyn Public Library</a>
             </li>
             <li class="section-item">
               <a class="section-link" href="https://rolling-scopes-school.github.io/elvirakiamova-JSFEPRESCHOOL2022Q4/" target="_blank">Plants</a>
-            </li>
-            <li class="section-item">
-              <a class="section-link" href="https://elvirakiamova.github.io/liga-scoring-Public/#" target="_blank">Cook Tour</a>
             </li>
           </ul>
         </section>
