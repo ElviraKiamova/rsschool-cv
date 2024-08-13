@@ -105,8 +105,17 @@
 }
 
 .section-item {
+  display: flex;
+  align-items: center;
   position: relative;
   list-style-type: none;
+  margin-bottom: 10px;
+}
+
+#contacts a {
+  margin-left: 15px;
+  color: #5d7260;
+  text-decoration: none;
 }
 
 .section-link {
