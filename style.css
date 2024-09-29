@@ -112,6 +112,10 @@
   margin-bottom: 10px;
 }
 
+#education .section-item:last-child img {
+  height: 800px;
+}
+
 #contacts a {
   margin-left: 15px;
   color: #5d7260;
